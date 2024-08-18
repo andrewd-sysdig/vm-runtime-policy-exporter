@@ -1,0 +1,12 @@
+services:
+  solaredge-api-exporter:
+    image: ghcr.io/andrewd-sysdig/sysdig-vm-runtime-policy-exporter:1
+    container_name: sysdig-vm-runtime-policy-exporter
+    restart: unless-stopped
+    ports:
+      - 8702:8000
+    environment:
+      - TZ=Australia/Melbourne
+      - SLEEP_TIME=600
+      - SYSDIG_API_TOKEN=xxx
+      - SYSDIG_URL=https://us2.app.sysdig.com
