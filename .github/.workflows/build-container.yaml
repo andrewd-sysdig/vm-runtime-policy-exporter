@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     branches: [ "main" ]
-    paths:
-      - 'src/**'  # Trigger the workflow if any file within the /src directory or its subdirectories is changed
+    paths-ignore:
+      - 'README.md'
 
 env:
   SYSDIG_URL: https://app.au1.sysdig.com
