@@ -4,8 +4,10 @@ on:
   workflow_dispatch:
   push:
     branches: [ "main" ]
-    paths-ignore:
-      - 'README.md'
+    paths:
+      - 'app.py'
+      - 'Dockerfile'
+      - 'requirements.txt'
 
 env:
   SYSDIG_URL: https://app.au1.sysdig.com
