@@ -39,4 +39,4 @@ jobs:
     
     - name: Push the image
       run: |
-        docker push -a ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}%      
+        docker push -a ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
