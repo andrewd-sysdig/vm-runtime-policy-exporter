@@ -1,6 +1,6 @@
 services:
   solaredge-api-exporter:
-    image: ghcr.io/andrewd-sysdig/sysdig-vm-runtime-policy-exporter:1
+    image: ghcr.io/andrewd-sysdig/vm-runtime-policy-exporter:latest
     container_name: sysdig-vm-runtime-policy-exporter
     restart: unless-stopped
     ports:
